@@ -41,6 +41,9 @@ func Value[T voidable](p *T) T {
 
 	// no value, make one.
 	zero := new(T)
+
+	// TODO: thoughts folks? runtime reflection here? ( T.NewVoid() ), eg: github.com/jahkeup/foo.Foo.NewVoid()?
+
 	return *zero
 }
 
